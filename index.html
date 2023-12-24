@@ -14,7 +14,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">money by SR</a>
+      <a class="navbar-brand" href="aboutSR.html" id="SR_about">money by SR</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">index</a></li>
-              <li><a class="dropdown-item" href="#">option chane</a></li>
+              <li><a class="dropdown-item" href="optionChane.html">option chane</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -41,19 +41,62 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="about.html">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contact us</a>
+            <a class="nav-link" href="contact.html">contact us</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign Up</button>
+        </div>
       </div>
     </div>
   </nav>
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignUpModalLabel">Sign Up to Money by SR</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputName1" class="form-label">Name</label>
+              <input type="Name" class="form-control" id="exampleInputName1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Conform Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -73,8 +116,8 @@
           <p>Every battle is won or lost before it’s ever fought</p>
           <div id="button">
             <button type="button" class="btn btn-primary">Join class</button>
-            <button type="button" class="btn btn-danger">login</button>
-            <button type="button" class="btn btn-success">pro trader</button>
+            <a href="login.html"><button type="button" class="btn btn-danger">login</button></a>
+            <button type="button" class="btn btn-success">Art gallery</button>
           </div>
         </div>
       </div>
@@ -85,8 +128,8 @@
           <p>The goal of a successful trader is to make the best trades. Money is secondary.</p>
           <div id="button">
             <button type="button" class="btn btn-primary">Join class</button>
-            <button type="button" class="btn btn-danger">login</button>
-            <button type="button" class="btn btn-success">pro trader</button>
+            <a href="login.html"><button type="button" class="btn btn-danger">login</button></a>
+            <button type="button" class="btn btn-success">Art gallery</button>
           </div>
         </div>
       </div>
@@ -97,8 +140,10 @@
           <p>Risk comes from not knowing what you’re doing.</p>
           <div id="button">
             <button type="button" class="btn btn-primary">Join class</button>
-            <button type="button" class="btn btn-danger">login</button>
-            <button type="button" class="btn btn-success">pro trader</button>
+            <a href="login.html">
+              <button type="button" class="btn btn-danger">login</button>
+            </a>
+            <button type="button" class="btn btn-success">Art gallery</button>
           </div>
         </div>
       </div>
@@ -110,8 +155,8 @@
             guaranteed to fail is not taking risks.</p>
           <div id="button">
             <button type="button" class="btn btn-primary">Join class</button>
-            <button type="button" class="btn btn-danger">login</button>
-            <button type="button" class="btn btn-success">pro trader</button>
+            <a href="login.html"><button type="button" class="btn btn-danger">login</button></a>
+            <button type="button" class="btn btn-success">Art gallery</button>
           </div>
         </div>
       </div>
@@ -146,7 +191,7 @@
             <div class="card-body">
               <p class="card-text">Technical analysts and chartists seek to identify patterns to anticipate the future
                 direction of a security’s price.</p>
-              <h3>Chart Reading</h3>
+              <h3>buy and sell strategy</h3>
             </div>
           </div>
         </div>
@@ -156,7 +201,7 @@
             <div class="card-body">
               <p class="card-text">A pattern is identified by a line connecting common price points, such as closing
                 prices or highs or lows, during a specific period.</p>
-              <h3>Chart Reading</h3>
+              <h3>solder patterns</h3>
             </div>
           </div>
         </div>
@@ -168,7 +213,7 @@
             <div class="card-body">
               <p class="card-text">These patterns can be as simple as trendlines and as complex as double
                 head-and-shoulders formations. Chart Reading</p>
-              <h3>Chart Reading</h3>
+              <h3>hammer strategy</h3>
             </div>
           </div>
         </div>
@@ -179,7 +224,7 @@
             <div class="card-body">
               <p class="card-text">An ascending triangle is a continuation pattern marking a trend with a specific entry
                 point, profit target, and stop loss level.</p>
-              <h3>Chart Reading</h3>
+              <h3>brack point strategy</h3>
             </div>
           </div>
         </div>
@@ -190,7 +235,7 @@
             <div class="card-body">
               <p class="card-text">an initial peak or trough, followed by a second and larger one, and then a third push
                 that mimics the first. Chart Reading</p>
-              <h3>Chart Reading</h3>
+              <h3>double top and bottom</h3>
             </div>
           </div>
         </div>
@@ -199,7 +244,7 @@
   </div>
   <div class="card text-center">
     <div class="card-header">
-      Featured
+      COPYRIGHT
     </div>
     <div class="card-body">
       <h5 class="card-title">@copyright since 2023 by SR company</h5>

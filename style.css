@@ -2,3 +2,9 @@
 #slide_img{
     height: 60vh;
 }
+#SR_about{
+    background-color: rgb(173, 233, 233);
+    border-radius: 10px;
+    padding: 4px;
+    color: black;
+}
