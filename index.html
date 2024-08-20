@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style_responsive.css" media="screen and (max-width: 1150px)">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="advance_chart_style.css">
 </head>
 
 <body>
@@ -94,6 +95,12 @@
       </div>
     </div>
   </div>
+  <div>
+    <script src="ticker_tape.js"></script>
+  </div>
+
+
+
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -112,9 +119,11 @@
           <h5>Learn Trading by SRAJ</h5>
           <p>Every battle is won or lost before it’s ever fought</p>
           <div id="button">
-            <button type="button" class="btn btn-primary">Join class</button>
+            <a href="market_data.html"><button type="button" class="btn btn-primary">Market data</button></a>
             <a href="login.html"><button type="button" class="btn btn-danger">login</button></a>
-            <button type="button" class="btn btn-success">Art gallery</button>
+            <a href="company_data.html"><button type="button" class="btn btn-success">Company data</button></a>
+            <a href="cryptocurrency_market_data.html"><button type="button" class="btn btn-info">Crypto
+                Market</button></a>
           </div>
         </div>
       </div>
@@ -124,9 +133,11 @@
           <h5>Alexander Elder</h5>
           <p>The goal of a successful trader is to make the best trades. Money is secondary.</p>
           <div id="button">
-            <button type="button" class="btn btn-primary">Join class</button>
+            <a href="market_data.html"><button type="button" class="btn btn-primary">Market data</button></a>
             <a href="login.html"><button type="button" class="btn btn-danger">login</button></a>
-            <button type="button" class="btn btn-success">Art gallery</button>
+            <a href="company_data.html"><button type="button" class="btn btn-success">Company data</button></a>
+            <a href="cryptocurrency_market_data.html"><button type="button" class="btn btn-success">Crypto
+                Market</button></a>
           </div>
         </div>
       </div>
@@ -136,11 +147,11 @@
           <h5>Warren Buffett</h5>
           <p>Risk comes from not knowing what you’re doing.</p>
           <div id="button">
-            <button type="button" class="btn btn-primary">Join class</button>
-            <a href="login.html">
-              <button type="button" class="btn btn-danger">login</button>
-            </a>
-            <button type="button" class="btn btn-success">Art gallery</button>
+            <a href="market_data.html"><button type="button" class="btn btn-primary">Market data</button></a>
+            <a href="login.html"><button type="button" class="btn btn-danger">login</button></a>
+            <a href="company_data.html"><button type="button" class="btn btn-success">Company data</button></a>
+            <a href="cryptocurrency_market_data.html"><button type="button" class="btn btn-success">Crypto
+                Market</button></a>
           </div>
         </div>
       </div>
@@ -151,9 +162,11 @@
           <p>The biggest risk is not taking a risk. In a world that’s changing really quickly, the only strategy that is
             guaranteed to fail is not taking risks.</p>
           <div id="button">
-            <button type="button" class="btn btn-primary">Join class</button>
+            <a href="market_data.html"><button type="button" class="btn btn-primary">Market data</button></a>
             <a href="login.html"><button type="button" class="btn btn-danger">login</button></a>
-            <button type="button" class="btn btn-success">Art gallery</button>
+            <a href="company_data.html"><button type="button" class="btn btn-success">Company data</button></a>
+            <a href="cryptocurrency_market_data.html"><button type="button" class="btn btn-info">Crypto
+                Market</button></a>
           </div>
         </div>
       </div>
@@ -167,83 +180,128 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-  <div class="album py-5 bg-light text-center">
+  <div class="chart_container">
+    <div class="container" id="mini_chart">
+      <script src="mini_chart_wedgets.js"></script>
+    </div>
+    <div id="chart">
+      <script src="https://s3.tradingview.com/tv.js"></script>
+    </div>
+  </div>
+  <div class="album py-5  text-center">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
-          <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/t1.png">
-            <div class="card-body">
-              <p class="card-text">Patterns are the distinctive formations created by the movements of security prices
-                on a chart and are the foundation of technical analysis.</p>
-              <h3>Chart Reading</h3>
+          <a href="market_chart.html">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/t1.png">
+              <div class="card-body">
+                <p class="card-text">Patterns are the distinctive formations created by the movements of security prices
+                  on a chart and are the foundation of technical analysis.</p>
+                <h3>Chart Reading</h3>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col">
+          <a href="buy_and_sell_indicator.html">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/t2.jpg">
+              <div class="card-body">
+                <p class="card-text">Technical analysts and chartists seek to identify patterns to anticipate the future
+                  direction of a security’s price.</p>
+                <h3>buy and sell strategy</h3>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <a href="forex_cross_rate.html">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/t2.jpg">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/Forex-cross-rate.jpg">
             <div class="card-body">
-              <p class="card-text">Technical analysts and chartists seek to identify patterns to anticipate the future
-                direction of a security’s price.</p>
-              <h3>buy and sell strategy</h3>
+              <p class="card-text">Get an overview of key Forex rates. Check out the Live Currency Cross Rates Table.
+                Compare world's most traded currency pairs on MoneyBySR.</p>
+              <h3>forex cross rate</h3>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/t3.png">
-            <div class="card-body">
-              <p class="card-text">A pattern is identified by a line connecting common price points, such as closing
-                prices or highs or lows, during a specific period.</p>
-              <h3>solder patterns</h3>
-            </div>
-          </div>
-        </div>
+        </a>
+      </div>
 
-        <div class="col">
+      <div class="col">
+        <a href="forex_headmap.html">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/t4.png">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/forex_headmap.png">
 
             <div class="card-body">
-              <p class="card-text">These patterns can be as simple as trendlines and as complex as double
-                head-and-shoulders formations. Chart Reading</p>
-              <h3>hammer strategy</h3>
+              <p class="card-text">Forex Heatmap makes it easy to spot strong and weak currencies in real-time. Get an
+                overview of how world currencies are traded against each other.</p>
+              <h3>forex headmap</h3>
             </div>
           </div>
-        </div>
-        <div class="col">
+        </a>
+      </div>
+      <div class="col">
+        <a href="market_overview.html">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/t5.jpg">
 
             <div class="card-body">
               <p class="card-text">An ascending triangle is a continuation pattern marking a trend with a specific entry
                 point, profit target, and stop loss level.</p>
-              <h3>brack point strategy</h3>
+              <h3>market overview</h3>
             </div>
           </div>
-        </div>
-        <div class="col">
+        </a>
+      </div>
+      <div class="col">
+        <a href="stock_market.html">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/t6.png">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/stock_market.jpg">
 
             <div class="card-body">
-              <p class="card-text">an initial peak or trough, followed by a second and larger one, and then a third push
-                that mimics the first. Chart Reading</p>
-              <h3>double top and bottom</h3>
+              <p class="card-text">Compete for prizes and gain extra trading experience. With Olymp Trade, you can be
+                sure your trading skills are matched with excellent service.
+              </p>
+              <h3>stock market</h3>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
+  </div>
+
+  <div id="stock_headmap">
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js"
+      async>
+        {
+          "exchanges": [],
+            "dataSource": "SPX500",
+              "grouping": "sector",
+                "blockSize": "market_cap_basic",
+                  "blockColor": "change",
+                    "locale": "en",
+                      "symbolUrl": "",
+                        "colorTheme": "dark",
+                          "hasTopBar": true,
+                            "isDataSetEnabled": true,
+                              "isZoomEnabled": true,
+                                "hasSymbolTooltip": true,
+                                  "isMonoSize": false,
+                                    "width": "100%",
+                                      "height": "100%"
+        }
+      </script>
+  </div>
+
+
   <div class="card text-center">
-    <div class="card-header">
+    <div class="card-header" style="background-color:rgb(240, 196, 176);">
       COPYRIGHT
     </div>
-    <div class="card-body">
+    <div class="card-body" id="copyright">
       <h5 class="card-title">@copyright since 2023 by SR company</h5>
       <p class="card-text">© 2023 money control by SR. All rights reserved.
 
@@ -260,6 +318,7 @@
       <a href="#top" class="btn btn-primary">go to top</a>
     </div>
   </div>
+  <script src="advance_chart_script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

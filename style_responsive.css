@@ -8,3 +8,6 @@
 #about_bg{
     height: 50vh;
 }
+#mini_chart{
+    display: block;
+}

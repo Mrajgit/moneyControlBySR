@@ -1,10 +1,75 @@
 /* slide image */
-#slide_img{
-    height: 60vh;
+#slide_img {
+    height: 70vh;
+    /* margin-top: 10px; */
 }
-#SR_about{
-    background-color: rgb(173, 233, 233);
+
+body {
+    background-color: rgb(197 233 196) !important;
+}
+
+/* navbar */
+#top {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+#top div ul li {
+    font-size: 20px;
+    padding: 6px;
+}
+
+#top div ul li a:hover {
+    background: linear-gradient(green, white, orange);
+    color: black;
+    border-radius: 20px;
+}
+
+#SR_about {
+    background-color: rgb(215, 201, 236);
     border-radius: 10px;
     padding: 4px;
     color: black;
+}
+
+#copyright {
+    background-color: rgb(51, 50, 50);
+    color: white;
+}
+
+.chart_container {
+    margin: 20px;
+
+}
+
+/* mini chart */
+#mini_chart {
+    display: flex;
+    max-width: 1800px;
+}
+
+#mini_chart div {
+    margin: 5px;
+}
+
+/* company chart */
+#company_chart_size {
+    width: 100%;
+    height: 85vh;
+    margin: 5px;
+}
+/* card container  */
+.col a{
+    text-decoration: none;
+    color: black;
+}
+
+/* stock head map */
+#stock_headmap{
+    width: 100%;
+    height: 80vh;
 }
